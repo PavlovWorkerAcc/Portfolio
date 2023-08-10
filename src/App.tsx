@@ -1,15 +1,17 @@
 import React from 'react';
-import { Mail } from "lucide-react"
+
 import './App.css';
-import { Button } from "./@/components/button"
+
 
 import Header from './Components/Header/Header';
+import Me from './Components/Me/Me';
 
 function App() {
   return (
-    <div className="App flex justify-center">
+    <div className="App flex justify-center flex-col">
 
-      <Header/>
+      <Header />
+      <Me/>
 
 
     </div>
