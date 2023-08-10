@@ -13,9 +13,11 @@ import {
 export default function Header() {
   return (
 
-    <div className='pt-10 flex justify-between w-11/12 ml-auto mr-auto'>
+    <div className='Header_Container pt-10 flex justify-between w-11/12 ml-auto mr-auto'>
 
-      <div className='flex'>
+      <div className='flex Header_Avatar__Card'>
+
+        {/* Header Avatar Component */}
 
         <Avatar>
 
@@ -24,6 +26,8 @@ export default function Header() {
           <AvatarFallback>DP</AvatarFallback>
 
         </Avatar>
+
+        {/* Header Hover Card Component with git repository  */}
 
         <HoverCard>
 
@@ -87,16 +91,16 @@ export default function Header() {
 
       </div>
 
-      
+      {/* Header Navigation Menu */}
 
       <nav className='flex'>
 
         <ul className='flex mr-auto ml-auto gap-24'>
 
-          <Button variant="link" className='text-white hover:text-red-500 text-lg duration-300' >Me</Button>
-          <Button variant="link" className='text-white hover:text-red-500 text-lg duration-300'>Knowledge</Button>
-          <Button variant="link" className='text-white hover:text-red-500 text-lg duration-300'>Works</Button>
-          <Button variant="link" className='text-white hover:text-red-500 text-lg duration-300'>Contact</Button>
+          <Button variant="link" className='text-white hover:text-red-500 text-lg duration-300 rounded-3xl hover:bg-white' >Me</Button>
+          <Button variant="link" className='text-white hover:text-red-500 text-lg duration-300 rounded-3xl hover:bg-white'>Knowledge</Button>
+          <Button variant="link" className='text-white hover:text-red-500 text-lg duration-300 rounded-3xl hover:bg-white'>Works</Button>
+          <Button variant="link" className='text-white hover:text-red-500 text-lg duration-300 rounded-3xl hover:bg-white'>Contact</Button>
 
         </ul>
 
